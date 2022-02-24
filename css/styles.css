@@ -1,0 +1,175 @@
+
+/* ---------------  CSS Styling of HTML ELEMENTS  --------------- */
+
+body {
+  margin: 0; /*ALL 4 SIDES*/
+  text-align: center; /*center everything*/
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Merriweather', serif;
+  /*font-size: 2em;*/
+  color: #40514E; /*General color for the text - light grey*/
+}
+
+h1 {
+  color: #66BFBF;
+  /*width: 10%;*/
+  /*margin: 0 auto 0 auto;*/
+  /*margin: 0 auto;*/ /* another way for the code above*/
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /*font-size: 90px;*/ /*The qty in px is not dynamic*/
+  /*font-size: 5.625em*/ /*1em = 16px --> another way to make it dynamic*/
+  /*font-size: 562.5%*/ /*100% = 16px*/
+  font-size: 5.625rem;
+  /*line-height: 2;*/
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2; /*we specify a scale --> the text has more separation*/
+}
+
+hr {
+  border: dotted #66BFBF 6px;
+  border-bottom: none;
+  width: 4%; /*it scales when the web page scales*/
+  margin: 100px auto; /* top & bottom 100px - left and right auto */
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66BFBF;
+}
+
+/* ---------------  CSS Styling of CLASSES  --------------- */
+
+/* -------------------  DIV Containers CLASS Style  ------------------- */
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0; /*100px top and bottom & 0 for left and right*/
+}
+
+.bottom-container {
+  background-color: #E4F9F5;
+  padding: 50px 0 20px;
+}
+
+/* -------------------  Images CLASS Style  ------------------- */
+
+.profile-img {
+  width: 15%;
+  border-radius: 100%;
+}
+
+.code-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chilli-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+/* -------------------  Paragraph CLASS Style  ------------------- */
+/*
+.skill-description-code {
+  clear: left;
+}
+
+.skill-description-cook {
+  clear: right;
+}
+*/
+
+.intro {
+  width: 30%; /*30% of its parent container, which is the middle container*/
+  margin: auto; /*the text will be centered*/
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px; /*40px top - auto for left and right - 60px bottom*/
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto; /*In this way I put the information on the center!*/
+  text-align: left; /*it overrides the text-align on the body!*/
+}
+
+.tag {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: grey;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+/* -------------------  Button CLASS style  ------------------- */
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+  text-decoration: none;
+}
